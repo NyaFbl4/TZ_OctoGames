@@ -146,6 +146,21 @@ MonoBehaviour:
       guid: 735d6aa767879aa469134858c5b2f0a7
   - Id: Scripts
     Resources:
-    - name: Prologue
+    - name: NewScript
       pathPrefix: Scripts
-      guid: 3bc8409e817f82a44bc4cc2494c039fa
+      guid: 8d75370a1f0c76b4bbc236708f8164e7
+  - Id: Characters/298a4f06-5727-4099-bc95-af6f074b07d2
+    Resources:
+    - name: SerGodrick
+      pathPrefix: Characters/SerGodrick
+      guid: 44243185ccd72954fa741ecfda29b8e2
+  - Id: Characters/331e2acf-a0a5-4394-bd97-dc95f116b68d
+    Resources:
+    - name: LediElionor
+      pathPrefix: Characters/LediElionor
+      guid: 5d5e8f1e64ca48c4aba8e121febd94fc
+  - Id: Backgrounds/80312c52-594d-4af3-9c60-0a705ada10a8
+    Resources:
+    - name: Location1
+      pathPrefix: Backgrounds/Location1
+      guid: b0fc9ffff6ce12943b251953a10aa69c
