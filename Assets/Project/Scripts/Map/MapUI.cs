@@ -1,0 +1,27 @@
+﻿using Naninovel;
+using Naninovel.UI;
+using UnityEngine;
+using UnityEngine.UI;
+
+public class MapUI : CustomUI
+{
+    [SerializeField] private Button _location1Btn;
+    [SerializeField] private Button _location2Btn;
+    [SerializeField] private Button _location3Btn;
+
+    protected override void Awake()
+    {
+        base.Awake();
+
+        _location1Btn.onClick.AddListener(() => LoadLocation("location1.nani"));
+        _location2Btn.onClick.AddListener(() => LoadLocation("location2.nani"));
+        _location3Btn.onClick.AddListener(() => LoadLocation("location3.nani"));
+    }
+
+    private void LoadLocation(string scriptName)
+    {
+        // Просто загружаем скрипт локации
+        Engine.GetService<IScriptPlayer>().PreloadAndPlayAsync(scriptName).Forget();
+        Hide(); // Скрываем карту после выбора
+    }
+}

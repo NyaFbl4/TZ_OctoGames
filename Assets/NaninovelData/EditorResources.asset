@@ -149,6 +149,9 @@ MonoBehaviour:
     - name: NewScript
       pathPrefix: Scripts
       guid: 8d75370a1f0c76b4bbc236708f8164e7
+    - name: Prologue
+      pathPrefix: Scripts
+      guid: 3bc8409e817f82a44bc4cc2494c039fa
   - Id: Characters/298a4f06-5727-4099-bc95-af6f074b07d2
     Resources:
     - name: SerGodrick
