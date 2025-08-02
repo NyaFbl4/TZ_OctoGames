@@ -144,14 +144,23 @@ MonoBehaviour:
     - name: ScriptNavigatorUI
       pathPrefix: UI
       guid: 735d6aa767879aa469134858c5b2f0a7
+    - name: MapUI
+      pathPrefix: UI
+      guid: 204842f89ad851a4baafd1261fd3f4fc
   - Id: Scripts
     Resources:
-    - name: NewScript
+    - name: InitGame
       pathPrefix: Scripts
-      guid: 8d75370a1f0c76b4bbc236708f8164e7
-    - name: Prologue
+      guid: 1542bc9f0451351428f91acececedfe3
+    - name: Location1
       pathPrefix: Scripts
       guid: 3bc8409e817f82a44bc4cc2494c039fa
+    - name: Location2
+      pathPrefix: Scripts
+      guid: 5c6ad340d4e4cfc43a86d29fbd370ac0
+    - name: Location3
+      pathPrefix: Scripts
+      guid: ebea8ee48338b2149b7a595ce772db70
   - Id: Characters/298a4f06-5727-4099-bc95-af6f074b07d2
     Resources:
     - name: SerGodrick
@@ -167,3 +176,13 @@ MonoBehaviour:
     - name: Location1
       pathPrefix: Backgrounds/Location1
       guid: b0fc9ffff6ce12943b251953a10aa69c
+  - Id: Backgrounds/56744641-001a-46a0-a81c-9c165b712008
+    Resources:
+    - name: Location3
+      pathPrefix: Backgrounds/Location3
+      guid: 6a40379c8371ee84e8414169c4a4757b
+  - Id: Backgrounds/8df708ff-cb72-4c26-b155-7b769568bf1c
+    Resources:
+    - name: Location2
+      pathPrefix: Backgrounds/Location2
+      guid: d1e1a8f910b2f884482eeaf9e20adc7e

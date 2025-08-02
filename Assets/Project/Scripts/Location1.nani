@@ -24,3 +24,5 @@ SerGodrick: Не твоя забота, оруженосец. Иди!
 # common_end
 ; Дальнейшие действия
 @hide SerGodrick
+
+@showUI MapUI

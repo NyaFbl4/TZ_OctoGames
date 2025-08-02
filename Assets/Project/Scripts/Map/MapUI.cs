@@ -13,9 +13,9 @@ public class MapUI : CustomUI
     {
         base.Awake();
 
-        _location1Btn.onClick.AddListener(() => LoadLocation("location1.nani"));
-        _location2Btn.onClick.AddListener(() => LoadLocation("location2.nani"));
-        _location3Btn.onClick.AddListener(() => LoadLocation("location3.nani"));
+        _location1Btn.onClick.AddListener(() => LoadLocation("Location1"));
+        _location2Btn.onClick.AddListener(() => LoadLocation("Location2"));
+        _location3Btn.onClick.AddListener(() => LoadLocation("Location3"));
     }
 
     private void LoadLocation(string scriptName)

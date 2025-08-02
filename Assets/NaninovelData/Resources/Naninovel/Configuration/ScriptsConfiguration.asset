@@ -15,8 +15,6 @@ MonoBehaviour:
   Loader:
     PathPrefix: Scripts
     ProviderTypes:
-    - Naninovel.AddressableResourceProvider, Elringus.Naninovel.Runtime, Version=0.0.0.0,
-      Culture=neutral, PublicKeyToken=null
     - Naninovel.ProjectResourceProvider, Elringus.Naninovel.Runtime, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
   ScriptParser: Naninovel.ScriptParser, Elringus.Naninovel.Runtime, Version=0.0.0.0,
@@ -24,10 +22,10 @@ MonoBehaviour:
   StableIdentification: 0
   InitializationScript: 
   TitleScript: 
-  StartGameScript: 
+  StartGameScript: InitGame
   AutoAddScripts: 1
   HotReloadScripts: 1
-  WatchScripts: 1
+  WatchScripts: 0
   WatchedDirectory: 
   CountTotalCommands: 0
   ShowScriptNavigator: 0

@@ -7,6 +7,7 @@
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
         <e p="NaninovelData" t="Include">
+          <e p="Metadata.json" t="Include" />
           <e p="Saves" t="Include">
             <e p="Settings.json" t="Include" />
           </e>
@@ -1190,13 +1191,6 @@
         </e>
         <e p="Project" t="Include">
           <e p="Scripts" t="Include">
-            <e p="Core" t="Include">
-              <e p="NameInputService.cs" t="Include" />
-              <e p="NameInputUI.cs" t="Include" />
-              <e p="QuestManager.cs" t="Include" />
-              <e p="QuestUI.cs" t="Include" />
-              <e p="TextController.cs" t="Include" />
-            </e>
             <e p="Map" t="Include">
               <e p="MapUI.cs" t="Include" />
             </e>
