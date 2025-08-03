@@ -147,6 +147,9 @@ MonoBehaviour:
     - name: MapUI
       pathPrefix: UI
       guid: 204842f89ad851a4baafd1261fd3f4fc
+    - name: GameUI
+      pathPrefix: UI
+      guid: 80d9f70f77d3de14fa16685a2ba4fefd
   - Id: Scripts
     Resources:
     - name: InitGame
@@ -161,6 +164,9 @@ MonoBehaviour:
     - name: Location3
       pathPrefix: Scripts
       guid: ebea8ee48338b2149b7a595ce772db70
+    - name: Test
+      pathPrefix: Scripts
+      guid: 46c906f3f88824445820e64cc1e4a66f
   - Id: Characters/298a4f06-5727-4099-bc95-af6f074b07d2
     Resources:
     - name: SerGodrick

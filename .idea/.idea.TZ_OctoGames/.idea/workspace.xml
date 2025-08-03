@@ -14,6 +14,13 @@
       <option value="$PROJECT_DIR$/Assets/Project/Scripts/Core/QuestUI.cs" />
       <option value="$PROJECT_DIR$/Assets/Project/Scripts/Core/QuestManager.cs" />
       <option value="$PROJECT_DIR$/Assets/Project/Scripts/NewScript.nani" />
+      <option value="$PROJECT_DIR$/Assets/Project/Scripts/MiniGame/MiniGAmeUI.cs" />
+      <option value="$PROJECT_DIR$/Assets/Project/Scripts/Map/MapUI.cs" />
+      <option value="$PROJECT_DIR$/Assets/Project/Scripts/MiniGame/MiniGame.cs" />
+      <option value="$PROJECT_DIR$/Assets/Project/Scripts/MiniGame/MiniGameUI.cs" />
+      <option value="$PROJECT_DIR$/Assets/Project/Scripts/Game/GameUI.cs" />
+      <option value="$PROJECT_DIR$/Assets/Project/Scripts/Naninovel/Test.nani" />
+      <option value="$PROJECT_DIR$/Assets/Project/Scripts/Game/Card.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="30g5E8hO9x88TaYrgFEHkNJrEYS" />
