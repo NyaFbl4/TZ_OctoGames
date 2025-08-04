@@ -20,8 +20,7 @@ public class MapUI : CustomUI
 
     private void LoadLocation(string scriptName)
     {
-        // Просто загружаем скрипт локации
         Engine.GetService<IScriptPlayer>().PreloadAndPlayAsync(scriptName).Forget();
-        Hide(); // Скрываем карту после выбора
+        Hide(); 
     }
 }

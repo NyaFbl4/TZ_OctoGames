@@ -1,5 +1,19 @@
+; Начало игры
 @back Location2 id:Location2
-@char LediElionor 
+@char LediElionor visible:true
 
+LediElionor: О-о… новый посетитель? Как мило. Но я не просто так здесь. Если хочешь узнать правду… сыграй со мной. Победишь – расскажу.
+@wait i
+
+; Запускаем мини-игру и скрываем персонажа
+@hide LediElionor time:0
+@showUI GameUI
 
 @stop
+
+
+; После завершения игры (вызывается из кода)
+[label GameCompleted]
+@show LediElionor time:0
+@resume
+LediElionor: Ха-ха… неплохо. Ладно. Ты ищешь тот меч, да? Он в Забытой часовне. Но знай – вытащить его сможет лишь тот, кто достоин.
