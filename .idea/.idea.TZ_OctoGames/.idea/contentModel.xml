@@ -1191,9 +1191,6 @@
         </e>
         <e p="Project" t="Include">
           <e p="Scripts" t="Include">
-            <e p="Core" t="Include">
-              <e p="NaninovelGameBridge.cs" t="Include" />
-            </e>
             <e p="Game" t="Include">
               <e p="Card.cs" t="Include" />
               <e p="CardsConfig.cs" t="Include" />

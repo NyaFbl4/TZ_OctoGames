@@ -24,12 +24,12 @@
       <option value="$PROJECT_DIR$/Assets/Project/Scripts/Core/GameComand.cs" />
       <option value="$PROJECT_DIR$/Assets/Project/Scripts/Core/GameCommand.cs" />
       <option value="$PROJECT_DIR$/Assets/Project/Scripts/Naninovel/Location2.nani" />
-      <option value="$PROJECT_DIR$/Assets/Project/Scripts/Core/NaninovelGameBridge.cs" />
       <option value="$PROJECT_DIR$/Assets/Project/Scripts/Game/StartMiniGameCommand.cs" />
       <option value="$PROJECT_DIR$/Assets/Project/Scripts/Naninovel/Test.nani" />
-      <option value="$PROJECT_DIR$/Assets/Project/Scripts/Game/MiniGameService.cs" />
-      <option value="$PROJECT_DIR$/Assets/Project/Scripts/Game/GameUI.cs" />
       <option value="$PROJECT_DIR$/Assets/Project/Scripts/Game/Card.cs" />
+      <option value="$PROJECT_DIR$/Assets/Project/Scripts/Core/NaninovelGameBridge.cs" />
+      <option value="$PROJECT_DIR$/Assets/Project/Scripts/Game/GameUI.cs" />
+      <option value="$PROJECT_DIR$/Assets/Project/Scripts/Game/MiniGameService.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="30g5E8hO9x88TaYrgFEHkNJrEYS" />
