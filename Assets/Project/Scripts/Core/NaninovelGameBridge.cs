@@ -13,12 +13,12 @@ public class NaninovelGameBridge : MonoBehaviour
         gameUI = GetComponent<GameUI>();
         scriptPlayer = Engine.GetService<IScriptPlayer>();
         
-        gameUI.OnGameCompleted += HandleGameCompleted;
+        //gameUI.OnGameCompleted += HandleGameCompleted;
     }
 
     private void OnDestroy()
     {
-        gameUI.OnGameCompleted -= HandleGameCompleted;
+        //gameUI.OnGameCompleted -= HandleGameCompleted;
     }
 
     private void HandleGameCompleted()

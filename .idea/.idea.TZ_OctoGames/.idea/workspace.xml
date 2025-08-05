@@ -7,10 +7,6 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="HighlightingSettingsPerFile">
-    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
-  </component>
   <component name="IdeDocumentHistory">
     <changedPaths>
       <option value="$PROJECT_DIR$/Assets/Project/Scripts/Core/NameInputUI.cs" />
@@ -24,14 +20,16 @@
       <option value="$PROJECT_DIR$/Assets/Project/Scripts/Game/CardsConfig.cs" />
       <option value="$PROJECT_DIR$/Assets/Project/Scripts/Naninovel/Location1.nani" />
       <option value="$PROJECT_DIR$/Assets/Project/Scripts/Map/MapUI.cs" />
-      <option value="$PROJECT_DIR$/Assets/Project/Scripts/Game/Card.cs" />
       <option value="$PROJECT_DIR$/Assets/Project/Scripts/Game/NaninovelGameBridge.cs" />
       <option value="$PROJECT_DIR$/Assets/Project/Scripts/Core/GameComand.cs" />
-      <option value="$PROJECT_DIR$/Assets/Project/Scripts/Naninovel/Test.nani" />
       <option value="$PROJECT_DIR$/Assets/Project/Scripts/Core/GameCommand.cs" />
-      <option value="$PROJECT_DIR$/Assets/Project/Scripts/Core/NaninovelGameBridge.cs" />
       <option value="$PROJECT_DIR$/Assets/Project/Scripts/Naninovel/Location2.nani" />
+      <option value="$PROJECT_DIR$/Assets/Project/Scripts/Core/NaninovelGameBridge.cs" />
+      <option value="$PROJECT_DIR$/Assets/Project/Scripts/Game/StartMiniGameCommand.cs" />
+      <option value="$PROJECT_DIR$/Assets/Project/Scripts/Naninovel/Test.nani" />
+      <option value="$PROJECT_DIR$/Assets/Project/Scripts/Game/MiniGameService.cs" />
       <option value="$PROJECT_DIR$/Assets/Project/Scripts/Game/GameUI.cs" />
+      <option value="$PROJECT_DIR$/Assets/Project/Scripts/Game/Card.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="30g5E8hO9x88TaYrgFEHkNJrEYS" />

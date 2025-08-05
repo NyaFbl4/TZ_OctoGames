@@ -10,6 +10,89 @@ namespace Project.Scripts.Game
 {
     public class GameUI : CustomUI
     {
+        [SerializeField] private Transform _cardsContainer;
+        [SerializeField] private CardsConfig _config;
+    
+        private MiniGameService _gameService;
+        private bool _isInitialized;
+
+        protected override void Awake()
+        {
+            base.Awake();
+        
+            // Получаем сервис
+            _gameService = Engine.GetService<MiniGameService>();
+        
+            // Инициализируем сервис
+            if (_config != null)
+            {
+                _gameService.InitMiniGame(_config);
+                _isInitialized = true;
+            }
+            else
+            {
+                Debug.LogError("CardsConfig not assigned in GameUI!");
+            }
+        }
+
+        protected override void HandleVisibilityChanged(bool visible)
+        {
+            base.HandleVisibilityChanged(visible);
+        
+            if (!_isInitialized) return;
+        
+            if (visible)
+            {
+                SetupGame();
+            }
+            else
+            {
+                ClearGame();
+            }
+        }
+
+        private void SetupGame()
+        {
+            if (!_isInitialized) return;
+        
+            // Добавляем проверку на null
+            if (_gameService == null)
+            {
+                Debug.LogError("GameService is null!");
+                return;
+            }
+
+            ClearGame();
+        
+            _gameService.OnCardCreated += HandleCardCreated;
+            _gameService.OnGameCompleted += HandleGameCompleted;
+        
+            _gameService.StartNewGame();
+        }
+
+        private void ClearGame()
+        {
+            if (_gameService != null)
+            {
+                _gameService.ResetService();
+                _gameService.OnCardCreated -= HandleCardCreated;
+                _gameService.OnGameCompleted -= HandleGameCompleted;
+            }
+        }
+
+        private void HandleCardCreated(Card card)
+        {
+            card.transform.SetParent(_cardsContainer, false);
+            card.transform.localScale = Vector3.one;
+        }
+
+        private void HandleGameCompleted()
+        {
+            Hide();
+            Engine.GetService<IScriptPlayer>().Play();
+        }
+        
+        /*
         [SerializeField] private CardsConfig _cardsConfig;
         [SerializeField] private Transform _parentContainer;
 
@@ -113,7 +196,7 @@ namespace Project.Scripts.Game
             // Сообщаем Naninovel, что игра завершена
             var naniGame = Engine.GetService<IScriptPlayer>();
             naniGame.Play(); // Продолжает выполнение скрипта Naninovel
-            */
+            
         }
 
         private async void HandleCardClicked(Card clickedCard)
@@ -148,5 +231,6 @@ namespace Project.Scripts.Game
                 card2.FlipCard();
             }
         }
+        */
     }
 }

@@ -628,8 +628,8 @@ MonoBehaviour:
   buttonControls: {fileID: 0}
   controlsLegend: {fileID: 0}
   fontChangeConfiguration: []
-  _cardsConfig: {fileID: 11400000, guid: e4e0abf1d5682ce4aa8c27e4391aab3c, type: 2}
-  _parentContainer: {fileID: 224365988529144698}
+  _cardsContainer: {fileID: 224365988529144698}
+  _config: {fileID: 11400000, guid: e4e0abf1d5682ce4aa8c27e4391aab3c, type: 2}
 --- !u!114 &1398716005674279672
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -33,7 +33,7 @@ namespace Project.Scripts.Game
         public void DestroyCard()
         {
             OnCardDestroyed?.Invoke();
-            Destroy(gameObject);
+            //Destroy(gameObject);
         }
 
         public void FlipCard()
