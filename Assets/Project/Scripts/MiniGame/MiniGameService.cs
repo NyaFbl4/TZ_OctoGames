@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using Naninovel;
 using UnityEngine;
 
-namespace Project.Scripts.Game
+namespace Project.Scripts.MiniGame
 {
     [InitializeAtRuntime]
     public class MiniGameService : IEngineService

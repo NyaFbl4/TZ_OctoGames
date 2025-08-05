@@ -6,9 +6,9 @@ using Naninovel.UI;
 using UnityEngine;
 using Random = UnityEngine.Random;
 
-namespace Project.Scripts.Game
+namespace Project.Scripts.MiniGame
 {
-    public class GameUI : CustomUI
+    public class MiniGameUI : CustomUI
     {
         [SerializeField] private Transform _cardsContainer;
         [SerializeField] private CardsConfig _config;

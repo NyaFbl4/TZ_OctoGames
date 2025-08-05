@@ -2,7 +2,7 @@
 using UnityEngine;
 using UnityEngine.UI;
 
-namespace Project.Scripts.Game
+namespace Project.Scripts.MiniGame
 {
     public class Card : MonoBehaviour
     {

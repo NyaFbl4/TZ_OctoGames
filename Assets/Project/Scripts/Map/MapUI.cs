@@ -1,26 +1,47 @@
 ﻿using Naninovel;
 using Naninovel.UI;
+using Project.Scripts.Map;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class MapUI : CustomUI
+namespace Project.Scripts.Map
 {
-    [SerializeField] private Button _location1Btn;
-    [SerializeField] private Button _location2Btn;
-    [SerializeField] private Button _location3Btn;
-
-    protected override void Awake()
+    public class MapUI : CustomUI
     {
-        base.Awake();
+        [SerializeField] private Button _location1Btn;
+        [SerializeField] private Button _location2Btn;
+        [SerializeField] private Button _location3Btn;
+        [SerializeField] private GameObject _location3LockIcon;
 
-        _location1Btn.onClick.AddListener(() => LoadLocation("Location1"));
-        _location2Btn.onClick.AddListener(() => LoadLocation("Location2"));
-        _location3Btn.onClick.AddListener(() => LoadLocation("Location3"));
-    }
+        private MapService _mapService;
 
-    private void LoadLocation(string scriptName)
-    {
-        Engine.GetService<IScriptPlayer>().PreloadAndPlayAsync(scriptName).Forget();
-        Hide(); 
+        protected override void Awake()
+        {
+            base.Awake();
+            _mapService = Engine.GetService<MapService>();
+        
+            _location1Btn.onClick.AddListener(() => NavigateToLocation("Location1"));
+            _location2Btn.onClick.AddListener(() => NavigateToLocation("Location2"));
+            _location3Btn.onClick.AddListener(() => NavigateToLocation("Location3"));
+        }
+
+        protected override void HandleVisibilityChanged(bool visible)
+        {
+            base.HandleVisibilityChanged(visible);
+            if (visible) UpdateUI();
+        }
+
+        private void UpdateUI()
+        {
+            _location3Btn.interactable = _mapService.IsLocationAvailable("Location3");
+            
+            _location3LockIcon.SetActive(!_mapService.IsLocationAvailable("Location3"));
+        }
+
+        private void NavigateToLocation(string locationId)
+        {
+            _mapService.NavigateToLocation(locationId);
+            Hide();
+        }
     }
 }

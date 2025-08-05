@@ -1191,15 +1191,17 @@
         </e>
         <e p="Project" t="Include">
           <e p="Scripts" t="Include">
-            <e p="Game" t="Include">
+            <e p="Map" t="Include">
+              <e p="BlockLocationCommand.cs" t="Include" />
+              <e p="MapService.cs" t="Include" />
+              <e p="MapUI.cs" t="Include" />
+            </e>
+            <e p="MiniGame" t="Include">
               <e p="Card.cs" t="Include" />
               <e p="CardsConfig.cs" t="Include" />
-              <e p="GameUI.cs" t="Include" />
               <e p="MiniGameService.cs" t="Include" />
+              <e p="MiniGameUI.cs" t="Include" />
               <e p="StartMiniGameCommand.cs" t="Include" />
-            </e>
-            <e p="Map" t="Include">
-              <e p="MapUI.cs" t="Include" />
             </e>
           </e>
         </e>

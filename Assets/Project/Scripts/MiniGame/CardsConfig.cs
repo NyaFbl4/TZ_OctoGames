@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using UnityEngine;
 
-namespace Project.Scripts.Game
+namespace Project.Scripts.MiniGame
 {
     [CreateAssetMenu(fileName = "CardsConfig")]
     public class CardsConfig : ScriptableObject
